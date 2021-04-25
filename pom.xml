@@ -34,7 +34,21 @@
 		</dependency>
 
 	</dependencies>
-
+<distributionManagement>
+	
+	    <repository>
+	      <id>nexus</id>
+	      <name>Jeevan_Releases Repository</name>
+	      <url>http://3.137.167.154:8081/repository/Jeevan_Releases/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>Jeevan_snapshot Repository </name>
+	      <url>http://3.137.167.154:8081/repository/Jeevan_Snapshot/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
 	<!-- Committing and updating changes through Maven, by using below mvn command. 
 		For Commiting mvn -Dmessage="Updated using maven" scm:checkin For updating 
 		mvn scm:update -->
